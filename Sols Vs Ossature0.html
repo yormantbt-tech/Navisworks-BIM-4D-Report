@@ -1,0 +1,617 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Rapport de conflits</title>
+<style>
+          body,table {
+          font-family: Calibri, Tahoma, Verdana, Arial, sans-serif;
+          }
+
+          softBreak{
+          mso-data-placement: same-cell;
+          }
+
+          tr.headerRow{
+          font-weight: bold;
+          }
+
+          table.titleTable tr.headerRow{
+          height: 75px;
+          }
+
+          table.titleTable td.headerCell{
+          font-size: 18pt;
+          vertical-align: middle;
+          }
+
+          table.titleTable td.logoCell{
+          padding: 5px 0px 0px 0px;
+          width: 180px;
+          vertical-align: middle;
+          }
+
+          table.testSummaryTable{
+          border: 3px solid black;
+          text-align: center;
+          background-color: #eeeeee;
+          border-collapse: collapse;
+          }
+
+          table.testSummaryTable tr.headerRow{
+          background: #eeeeee;
+          }
+
+          table.testSummaryTable td{
+          border-width: 1px;
+          border-style: solid;
+          border-color: #666666;
+          }
+
+          table.testSummaryTable td.testName{
+          font-size: 16pt;
+          font-weight: bold;
+          vertical-align: middle;
+          text-align: center;
+          }
+
+          table.mainTable{
+          border-collapse: collapse;
+          }
+
+          table.mainTable tr.contentRow{
+          height: 100px;
+          }
+
+          table.mainTable tr.childRow{
+          height: 100px;
+          }
+
+          table.mainTable tr.childRowLast{
+          height: 100px;
+          }
+
+          table.mainTable tr.clashGroupRow{
+          height: 100px;
+          font-weight: bold;
+          }
+
+          table.mainTable td{
+          vertical-align: middle;
+          border: 1px solid #999999;
+          }
+
+          table.mainTable td.mergedCellHeader{
+          text-align:center;
+          }
+
+          table.mainTable tr.clashGroupRow td{
+          font-weight: bold;
+          border-top: 5px solid #333333;
+          }
+
+          table.mainTable tr.childRow td, table.mainTable tr.childRowLast td{
+          color: #707070;
+          }
+
+          table.mainTable tr.childRow td.contentCell, table.mainTable tr.childRowLast td.contentCell{
+          background-color: #ffffee;
+          }
+
+          table.mainTable tr.childRowLast td{
+          border-bottom: 5px solid #333333;
+          }
+
+          table.mainTable td.clashGroupCell{
+          background: #ffff99;
+          }
+
+          table.mainTable td.item1HeaderGroup{
+          background-color: #99ccff;
+          text-align: center;
+          }
+
+          table.mainTable td.item2HeaderGroup{
+          background-color: #ffcccc;
+          text-align: center;
+          }
+
+          table.mainTable td.item1Header{
+          background-color: #99ccff;
+          }
+
+
+          table.mainTable td.item2Header{
+          background-color: #ffcccc;
+          }
+
+          table.mainTable td.generalHeader{
+          background-color: #eeeeee;
+          }
+
+
+          table.mainTable td.item1Content{
+          background-color: #ddeeff;
+          }
+
+          table.mainTable td.item2Content{
+          background-color: #ffeeee;
+          }
+
+          table.mainTable tr.clashGroupRow td.item1Content{
+          background-color: #bbddff;
+          }
+
+          table.mainTable tr.clashGroupRow td.item2Content{
+          background-color: #ffdddd;
+          }
+
+
+          span.hiddenText{
+          color: white;
+          height: 1px;
+          font-size: 5pt;
+          }
+        </style>
+</head>
+<body>
+<table class="titleTable">
+<tr class="headerRow">
+<td class="logoCell" colspan="3"><img alt="logo" src="Sols Vs Ossature0_files\logo.jpg"></td>
+<td class="headerCell" colspan="50">
+              Rapport de conflits<br></td>
+<tr>
+<td></td>
+</tr>
+</tr>
+</table><br><table class="testSummaryTable">
+<tr class="headerRow">
+<td rowspan="2" colspan="2" class="testName">Sols Vs Ossature</td>
+<td class="headerCell">Tolérance</td>
+<td class="headerCell">Conflits</td>
+<td class="headerCell">Nouveau</td>
+<td class="headerCell">Actif</td>
+<td class="headerCell">Vérifié</td>
+<td class="headerCell">Approuvé</td>
+<td class="headerCell">Résolu</td>
+<td class="headerCell">Type</td>
+<td class="headerCell">Etat</td>
+</tr>
+<tr class="contentRow">
+<td class="contentCell">0.005m</td>
+<td class="contentCell">16</td>
+<td class="contentCell">16</td>
+<td class="contentCell">0</td>
+<td class="contentCell">0</td>
+<td class="contentCell">0</td>
+<td class="contentCell">0</td>
+<td class="contentCell">Dur</td>
+<td class="contentCell">OK</td>
+</tr>
+</table><br><table class="mainTable">
+<tr class="headerRow">
+<td colspan="10" class="generalHeader"></td>
+<td colspan="4" class="item1HeaderGroup">Elément 1</td>
+<td colspan="4" class="item2HeaderGroup">Elément 2</td>
+<td class="generalHeader"></td>
+</tr>
+<tr class="headerRow">
+<td colspan="2" class="generalHeader">Image</td>
+<td colspan="2" class="generalHeader">Nom de conflit</td>
+<td class="generalHeader">Etat</td>
+<td class="generalHeader">Distance</td>
+<td class="generalHeader">Priorité</td>
+<td colspan="3" class="generalHeader">Point de conflit</td>
+<td class="item1Header">ID d'élément</td>
+<td class="item1Header">Calque</td>
+<td class="item1Header">Elément Nom</td>
+<td class="item1Header">Elément Type</td>
+<td class="item2Header">ID d'élément</td>
+<td class="item2Header">Calque</td>
+<td class="item2Header">Elément Nom</td>
+<td class="item2Header">Elément Type</td>
+<td class="generalHeader">Commentaires</td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0001.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0001.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit1</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.030</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-9.886,
+          y:6.340,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            560077</td>
+<td class="élément2Contenu">Niv. de contreventement 2</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#1 - Daniel PACH -
+     2026/9/30 
+      14:28</i><br style="mso-data-placement:same-cell;">Conflit Physique : Poteau HEB 240 vs. Caillebotis
+Action requise : Interférence directe entre le poteau (y compris les goussets et boulons) et le caillebotis de la plateforme. Veuillez modifier la limite du sol (Modifier la limite) dans le modèle source (Revit) afin de créer la découpe correspondante autour de l'assemblage, en prévoyant un jeu de tolérance pour le montage sur chantier.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0002.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0002.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit2</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.030</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-9.886,
+          y:1.117,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            520137</td>
+<td class="élément2Contenu">Niv. de contreventement 2</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#2 - Daniel PACH -
+     2026/9/30 
+      14:29</i><br style="mso-data-placement:same-cell;">Conflit Physique : Poteau HEB 240 vs. Caillebotis
+Action requise : Interférence directe entre le poteau (y compris les goussets et boulons) et le caillebotis de la plateforme. Veuillez modifier la limite du sol (Modifier la limite) dans le modèle source (Revit) afin de créer la découpe correspondante autour de l'assemblage, en prévoyant un jeu de tolérance pour le montage sur chantier.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0003.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0003.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit3</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.030</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-4.886,
+          y:1.340,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            516088</td>
+<td class="élément2Contenu">Niv. de contreventement 2</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#3 - Daniel PACH -
+     2026/9/30 
+      14:29</i><br style="mso-data-placement:same-cell;">Conflit Physique : Poteau HEB 240 vs. Caillebotis
+Action requise : Interférence directe entre le poteau (y compris les goussets et boulons) et le caillebotis de la plateforme. Veuillez modifier la limite du sol (Modifier la limite) dans le modèle source (Revit) afin de créer la découpe correspondante autour de l'assemblage, en prévoyant un jeu de tolérance pour le montage sur chantier.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0004.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0004.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit4</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.030</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-4.886,
+          y:6.117,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            522744</td>
+<td class="élément2Contenu">Niv. de contreventement 2</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#4 - Daniel PACH -
+     2026/9/30 
+      14:29</i><br style="mso-data-placement:same-cell;">Conflit Physique : Poteau HEB 240 vs. Caillebotis
+Action requise : Interférence directe entre le poteau (y compris les goussets et boulons) et le caillebotis de la plateforme. Veuillez modifier la limite du sol (Modifier la limite) dans le modèle source (Revit) afin de créer la découpe correspondante autour de l'assemblage, en prévoyant un jeu de tolérance pour le montage sur chantier.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0005.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0005.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit5</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-5.008,
+          y:6.367,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            665027</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#5 - Daniel PACH -
+     2026/9/30 
+      14:30</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0006.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0006.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit6</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-4.991,
+          y:6.239,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            664939</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#6 - Daniel PACH -
+     2026/9/30 
+      14:30</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0007.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0007.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit7</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-5.003,
+          y:1.107,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            665066</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#7 - Daniel PACH -
+     2026/9/30 
+      14:30</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0008.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0008.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit8</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-10.003,
+          y:1.107,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            683840</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#8 - Daniel PACH -
+     2026/9/30 
+      14:31</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0009.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0009.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit9</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-10.021,
+          y:1.239,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            657955</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#9 - Daniel PACH -
+     2026/9/30 
+      14:31</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0010.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0010.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit10</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-10.008,
+          y:6.367,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            683839</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#10 - Daniel PACH -
+     2026/9/30 
+      14:31</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0011.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0011.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit11</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-5.003,
+          y:6.107,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            664996</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#11 - Daniel PACH -
+     2026/9/30 
+      14:31</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0012.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0012.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit12</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-10.003,
+          y:6.107,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            683838</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#12 - Daniel PACH -
+     2026/9/30 
+      14:31</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0013.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0013.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit13</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-9.991,
+          y:1.239,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            632569</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#13 - Daniel PACH -
+     2026/9/30 
+      14:31</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0014.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0014.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit14</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-9.991,
+          y:6.239,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            664937</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#14 - Daniel PACH -
+     2026/9/30 
+      14:31</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0015.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0015.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit15</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-4.991,
+          y:1.239,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            658053</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#15 - Daniel PACH -
+     2026/9/30 
+      14:31</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+<tr class="contentRow">
+<td colspan="2" class="contentCell"><a target="_blank" href="Sols Vs Ossature0_files\cd_0_0016.jpg "><img border="0" width="95" height="95" src="Sols Vs Ossature0_files\cd_0_0016.jpg"></a></td>
+<td colspan="2" class="contentCell">Conflit16</td>
+<td class="contentCell">Nouveau</td>
+<td class="contentCell">-0.009</td>
+<td class="contentCell">2</td>
+<td colspan="3" class="contentCell">
+          x:-10.021,
+          y:6.239,
+          z:14.970</td>
+<td class="élément1Contenu"><i>ID d'élément</i>:
+            687129</td>
+<td class="élément1Contenu">Plateforme principale</td>
+<td class="élément1Contenu">Acier S235 - Caillebotis Galvanisé</td>
+<td class="élément1Contenu">Solide</td>
+<td class="élément2Contenu"><i>ID d'élément</i>:
+            664938</td>
+<td class="élément2Contenu">Plateforme principale</td>
+<td class="élément2Contenu">Acier - S355</td>
+<td class="élément2Contenu">Solide</td>
+<td class="contentCell"><i>#16 - Daniel PACH -
+     2026/9/30 
+      14:32</i><br style="mso-data-placement:same-cell;">Poutre IPE vs. Caillebotis (Problème d'élévation)
+Action requise : Un conflit par chevauchement vertical a été détecté. La semelle supérieure de la poutre pénètre la géométrie de la plateforme. Veuillez vérifier le décalage par rapport au niveau (Décalage en Z) dans Revit, soit en abaissant l'ossature, soit en remontant le niveau du sol, pour garantir que le caillebotis repose correctement sur la structure sans la traverser.<br style="mso-data-placement:same-cell;"><br style="mso-data-placement:same-cell;"></td>
+</tr>
+</table>
+<hr><br></body>
+</html>
